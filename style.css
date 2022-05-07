@@ -99,3 +99,34 @@ marquee {
   float: left;
   margin: 10px 10px;
 }
+
+/* webring */
+
+.webring-table {
+  border-collapse: collapse;
+  margin: 1em;
+}
+
+.webring-table-tr, .webring-table-td {
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+.webring-site-section {
+  max-width: 15em;
+  text-align: center;
+}
+
+.webring-site-label {
+}
+
+.webring-site-link-container {
+}
+
+.webring-site-description-container {
+  font-style: italic;
+}
+
+.webring-header-container {
+  text-align: center;
+}
