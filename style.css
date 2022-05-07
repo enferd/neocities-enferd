@@ -6,7 +6,7 @@
 body {
   color: #bbc3ba;
   font-family: corben;
-  background: black url("Images/Wallpapers/fin3.webp") no-repeat 50% 5%/cover;
+  background: black url("Images/Wallpapers/fin3.webp") no-repeat 50% 5%;
   margin: 0;
 }
 
@@ -103,18 +103,20 @@ marquee {
 /* webring */
 
 .webring-table {
+  background: #443c45 url("Images/background.png") round right/66px 77px;
   border-collapse: collapse;
+  border-radius: 10px;
   margin: 1em;
 }
 
 .webring-table-tr, .webring-table-td {
   border-collapse: collapse;
-  border: 2px solid black;
+  border: groove #443c45 2px;
 }
 
 .webring-site-section {
   max-width: 15em;
-  text-align: center;
+  text-align: left;
 }
 
 .webring-site-label {
