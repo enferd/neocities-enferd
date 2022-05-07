@@ -1,0 +1,101 @@
+@font-face {
+  font-family: corben;
+  src: url("Corben-Regular.ttf") format("ttf");
+}  
+
+body {
+  color: #bbc3ba;
+  font-family: corben;
+  background: black url("Images/Wallpapers/fin3.webp") no-repeat 50% 5%/cover;
+  margin: 0;
+}
+
+a:visited{
+  color: #bbc3ba;
+}
+
+marquee {
+  color: cyan;
+}
+
+/* Structure */
+
+#total{ 
+   background-color:rgba(68, 60, 69, 0.77);
+   width: 1000px;
+   margin: 50px auto;
+   overflow: auto; /* this i used to fix the weird margin issues */
+   outline: groove #bbc3ba;
+   border-radius: 15px;
+   box-shadow: 4px 4px 3px 1px;
+}
+
+#heading {
+   clear: both;
+   width: 900px;
+   height: 100px;
+   margin: 20px auto;
+   background: #443c45 url("Images/background.png") round top/77px 66px;
+   outline: groove #443c45 2px;
+   border-radius: 10px;
+   box-shadow: 5px 5px 3px 1px #000;
+}
+
+#content {
+   width: 900px;
+   margin: 0 auto 100px auto;
+   clear: both;
+}
+
+#content-left {
+   float: left; 
+   width: 195px; 
+   background-color:#443c45;
+   outline: groove #443c45 2px;
+   border-radius: 10px;
+   box-sizing: border-box; /* this only exists because the padding would add width to the original div */
+   padding: 10px 10px;
+   background: #443c45 url("Images/background.png") round top/77px 66px;
+}
+
+#content-right {
+   float: right; 
+   width: 695px;
+   background-color:#443c45;
+   outline: groove #443c45 2px;
+   border-radius: 10px;
+   box-sizing: border-box;
+   padding: 10px 10px; /* this only exists because the padding would add width to the original div */
+   background: #443c45 url("Images/background.png") round top/77px 66px;
+}
+
+#footer {
+  clear: both;
+  margin: 0 auto 20px auto; 
+}
+
+/* Classes */
+
+.image {
+  display: block; /* the type of display used by default doesn't allow for centering */
+  margin: auto;
+}
+
+/* IDs */
+
+#logo {
+  margin: 10px 10px 10px 10px;
+  float: left;
+  width: 90px;
+  height: 80px;
+}
+
+#title{
+  color: #bbc3ba;
+  text-align: center;
+}
+
+#button{
+  float: left;
+  margin: 10px 10px;
+}
