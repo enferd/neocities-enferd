@@ -70,7 +70,7 @@ margin: 0 0 -5px 0;
    border-radius: 10px;
    box-sizing: border-box; /* this only exists because the padding would add width to the original div */
    padding: 5px 5px;
-   background: #443c45 url("Images/background.png") round top/77px 66px;
+   background: #443c45 url("Images/Wallpapers/ba.png") center;
 }
 
 #content-right {
@@ -81,7 +81,7 @@ margin: 0 0 -5px 0;
    border-radius: 10px;
    box-sizing: border-box; /* this only exists because the padding would add width to the original div */
    padding: 10px 10px; 
-   background: #443c45 url("Images/background.png") round top/77px 66px;
+   background: #443c45 url("Images/Wallpapers/ba.png") center top;
 }
 
 #footer {
@@ -120,7 +120,7 @@ margin: 0 0 -5px 0;
 .webring-table {
   table-layout: fixed;
   width: 92%;
-  background: #443c45 url("Images/background.png") round right/66px 77px;
+  background: #443c45 url("Images/Wallpapers/bb.png") center;
   /* border-collapse: collapse; */
   border-radius: 10px;
   border: groove #443c45 3px;
