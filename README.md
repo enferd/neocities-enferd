@@ -6,7 +6,7 @@ My github repo for the Neocities Page enferd, I'll be working on it through here
 
 # Things to do
 
-- [ ] Add webring code.
+- [x] Add webring code.
 - [ ] Add blog, coding, art, music, and links pages.
   + [ ] Blog
     * [ ] Structure
@@ -36,4 +36,4 @@ My github repo for the Neocities Page enferd, I'll be working on it through here
 - [ ] Re-work landing page
   + [ ] Logo
   + [ ] Content
-  + [ ] Responsive Design
+  + [x] Responsive Design
