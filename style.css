@@ -34,7 +34,7 @@ margin: 0 0 -5px 0;
 
 #total{ 
    background-color:rgba(68, 60, 69, 0.77);
-   width: 88% /* 1000px */;
+   width: 90% /* 1000px */;
    margin: 50px auto;
    overflow: auto; /* this i used to fix the weird margin issues */
    outline: groove #bbc3ba;
@@ -54,7 +54,7 @@ margin: 0 0 -5px 0;
 }
 
 #content {
-   width: 90%;
+   width: 95%;
    margin: 2% auto 100px auto;
    clear: both;
 }
@@ -99,9 +99,8 @@ margin: 0 0 -5px 0;
 /* IDs */
 
 #logo {
-  width: 80%;
-  /*margin: -100px 10px -130px 10px;
-  float: both; */
+  position: center;
+  width: 95%;
   /* width: 90px;
   height: 80px; */
 }
