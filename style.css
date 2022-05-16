@@ -28,7 +28,7 @@ marquee {
 }
 
 h3 {
-margin: 0 0 -5px 0;
+  margin: 0 0 -5px 0;
 }
 
 /* Structure */
@@ -99,6 +99,11 @@ margin: 0 0 -5px 0;
   margin: auto;
 }
 
+.button{
+  float: left;
+  margin: 1px 2px;
+}
+
 /* IDs */
 
 #logo {
@@ -108,11 +113,6 @@ margin: 0 0 -5px 0;
 #title{
   color: #bbc3ba;
   text-align: center;
-}
-
-#button{
-  float: left;
-  margin: 10px 10px;
 }
 
 /* webring */
