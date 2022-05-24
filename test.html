@@ -1,18 +1,45 @@
-<h3> cute buttons </h3> <br>
-<a href="https://neocities.org"><img class="button" src="Images/buttons/neocities.gif"
-        alt="Neocities"></a>
-<a href="https://www.pcmag.com/encyclopedia/term/800x600"><img class="button"
-        src="Images/buttons/hicolor.gif"></a>
-<a href="https://validator.w3.org/"><img class="button" src="Images/buttons/valid401.gif"></a>
-<a href="https://developer.mozilla.org/en-US/docs/Learn"><img class="button"
-        src="Images/buttons/htmllearnittoday.gif"></a>
-<a href="https://creativecommons.org/licenses/by-sa/2.0/"><img class="button"
-        src="Images/buttons/cc-by-sa.gif"></a>
-<a href="https://www.hrc.org/resources/bisexual-faq"><img class="button"
-        src="Images/buttons/bi8831.png"></a>
-<a href="https://theanarchistlibrary.org/library/anonymous-desert"><img class="button"
-        src="Images/buttons/anarchynow.gif"></a>
-<a href="mailto:en.ð.gay"><img class="button" src="Images/buttons/email.gif"></a>
-<a href="https://youcandoanythingwithexcel.com/"><img class="button"
-        src="Images/buttons/getexcelviewer.gif"></a>
-<a href="https://kyou.systems/"><img class="button" src="Images/buttons/kyou.gif"></a>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>My Markdown Content</title>
+
+	<meta name="viewport" content="width=device-width">
+
+	<link href="style.css" rel="stylesheet" type="text/css" media="all">
+	<script src="loadFile.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<!-- Obtain Markdown.Converter.js from http://code.google.com/p/pagedown/ -->
+	<script src="Markdown.Converter.js"></script>
+
+	<script>
+$(document).ready(function () {
+$("#status").html("<p>Loading page content...</p>");
+
+// Load the Markdown file and convert it to HTML for display
+var markdownURL = "Blog/17-5-22_Start.md";
+$.get(markdownURL, function (markdownContent) {
+var converter = new Markdown.Converter();
+var htmlContent = converter.makeHtml(markdownContent);
+$("div#content").html(htmlContent);
+});
+});
+	</script>
+
+</head>
+
+<body>
+
+	<div id="content">
+		<div File="Blog/17-5-22_Start.md"></div>
+		<div id="status">
+			<p>JavaScript must be enabled in your browser to view this page.</p>
+		</div>
+		# Test
+	</div>
+	<script>includeHTML();</script>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 @font-face {
   font-family: corben;
-  src: url("Corben-Regular.ttf") format("ttf");
+  src: "Fonts/Corben-Regular.ttf" format("ttf");
 }  
 
 body {

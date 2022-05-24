@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'ProggyClean';
+    src: url("Fonts/ProggyClean/ProggyClean.ttf") format("truetype");
+    src: url("Fonts/ProggyClean/ProggyClean.otf") format("opentype");
+    src: url("Fonts/ProggyClean/ProggyCleanCE.ttf") format("truetype");
+}
+
+
+body {
+    color: #bbc3ba;
+    font-family: ProggyClean;
+    background: black url("Images/Wallpapers/fin3.webp") no-repeat 50% 5%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  a {
+    color: #bbc3ba;
+  }
+  
+  a:visited {
+    color: #bbc3ba;
+  }
+  
+  a:hover {
+    color: #ccd4cb;
+  }
+  
+  marquee {
+    color: cyan;
+  }
+  
+  h3 {
+    margin: 0 0 -5px 0;
+  }
+  
+  /* Structure */
+  
+@media(min-width: 800px){
+
+  #total{ 
+     background-color:rgba(68, 60, 69, 0.77);
+     width: 800px;
+     height: 90vh;
+     margin: 5vh auto;
+     overflow: hidden; /* this i used to fix the weird margin issues */
+     outline: groove #bbc3ba;
+     border-radius: 15px;
+     box-shadow: 4px 4px 3px 1px;
+  }  
+  /*
+  #content {
+     width: 95%;
+     margin: 2vh auto;
+     height: 86vh;
+     clear: both;
+  }
+  */
+  #left {
+     float: left; 
+     width: 100px;
+     height: 86vh;
+     margin: 2vh 10px 2vh 15px;
+  }
+  
+  #info {
+     height: calc(86vh - 100px);  
+     background-color:#443c45;
+     outline: groove #443c45 4px;
+     border-radius: 10px;
+     box-sizing: border-box; /* this only exists because the padding would add width to the original div */
+     padding: 5px 5px;
+     background: #443c45 url("Images/Wallpapers/ba.png") center;
+     overflow: auto; 
+  }
+  
+  #right {
+     float: right; 
+     width: 650px;
+     height: 86vh; 
+     overflow: auto;
+     box-sizing: border-box; /* this only exists because the padding would add width to the original div */
+     margin: 2vh 15px 2vh 10px;
+  }
+
+  #navigation{
+    height: 30px;
+    padding: 0 10px;
+    margin: 0 0 15px 0;
+    background-color:#443c45;
+    outline: groove #443c45 4px;
+    border-radius: 10px;
+    background: #443c45 url("Images/Wallpapers/ba.png") center top;
+  }
+
+  #content {
+     height: calc(86vh - 50px);
+     padding: 10px 10px; 
+     box-sizing: border-box; /* this only exists because the padding would add width to the original div */
+     background-color:#443c45;
+     outline: groove #443c45 4px;
+     border-radius: 10px;
+     background: #443c45 url("Images/Wallpapers/ba.png") center top;
+  }
+
+  /*
+  #footer {
+    clear: both;
+    width: 95%;
+    height: 10vh;
+    margin: 0 auto auto auto; 
+  } 
+  */
+}
+  
+
+
+  /* Classes */
+  
+  .image {
+    display: block; /* the type of display used by default doesn't allow for centering */
+    margin: auto;
+  }
+  
+  .button{
+    float: left;
+    margin: 1px 2px;
+  }
+  
+  /* IDs */
+  
+  #logo {
+    height: 100px;
+    width: 100px;
+  }
+  
+  #title{
+    color: #bbc3ba;
+    text-align: center;
+  }
+  
+  /* webring */
+  
+  .webring-table {
+    table-layout: fixed;
+    width: 92%;
+    background: #443c45 url("Images/Wallpapers/bb.png") center;
+    /* border-collapse: collapse; */
+    border-radius: 10px;
+    border: groove #443c45 3px;
+    overflow: hidden;
+    margin: 4%;
+    box-shadow: 3px 3px 2px 1px #000;
+  }
+  
+  .webring-table-tr, .webring-table-td {
+    /* border-collapse: collapse; */
+    vertical-align: top;
+  }
+  
+  .webring-site-section {
+    /* max-width: 15em; */
+    text-align: left;
+  }
+  
+  /*
+  .webring-site-label {
+  }
+  
+  .webring-site-link-container {
+  }
+  */
+  
+  .webring-site-description-container {
+    font-style: italic;
+  }
+  
+  .webring-header-container {
+    text-align: center;
+  }

@@ -25,3 +25,9 @@ function includeHTML() {
       }
     }
   };
+
+function testTitle() {
+  var title, content, i;
+  title = document.querySelector(#title);
+  title.testContent = "Test";
+}
