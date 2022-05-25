@@ -104,6 +104,7 @@ body {
   background: #443c45 url("Images/Wallpapers/ba.png") center top;
 }
 
+/* classes */
   
 .image {
   display: block; /* the type of display used by default doesn't allow for centering */
@@ -113,6 +114,47 @@ body {
 .button{
   margin: auto;
 }
+
+  /* webring */
+  
+  .webring-table {
+    table-layout: fixed;
+    width: 98%;
+    background: #443c45 url("Images/Wallpapers/bb.png") center;
+    /* border-collapse: collapse; */
+    border-radius: 10px;
+    border: groove #443c45 3px;
+    overflow: hidden;
+    margin: 1%;
+    box-shadow: 3px 3px 2px 1px #000;
+  }
+  
+  .webring-table-tr, .webring-table-td {
+    /* border-collapse: collapse; */
+    vertical-align: top;
+  }
+  
+  .webring-site-section {
+    /* max-width: 15em; */
+    text-align: left;
+  }
+  
+  /*
+  .webring-site-label {
+  }
+  */
+
+  .webring-site-link-container a {
+    background-color:#443c45;
+  }
+  
+  .webring-site-description-container {
+    font-style: italic;
+  }
+  
+  .webring-header-container {
+    text-align: center;
+  }
 
 @media(min-width: 800px){
 
@@ -179,7 +221,10 @@ body {
      border: groove #443c45 4px;
      border-radius: 10px;
      background: #443c45 url("Images/Wallpapers/ba.png") center top;
+     overflow: auto;
   }
+
+  /* Classes */
 
   .image {
     display: block; /* the type of display used by default doesn't allow for centering */
@@ -190,20 +235,7 @@ body {
     float: both;
     margin: auto;
   }
-}
 
-
-  /* Classes */
-  
-  
-  /* IDs */
-  
-  
-  #title{
-    color: #bbc3ba;
-    text-align: center;
-  }
-  
   /* webring */
   
   .webring-table {
@@ -217,29 +249,13 @@ body {
     margin: 4%;
     box-shadow: 3px 3px 2px 1px #000;
   }
+}
+
+  /* IDs */
   
-  .webring-table-tr, .webring-table-td {
-    /* border-collapse: collapse; */
-    vertical-align: top;
-  }
   
-  .webring-site-section {
-    /* max-width: 15em; */
-    text-align: left;
-  }
-  
-  /*
-  .webring-site-label {
-  }
-  
-  .webring-site-link-container {
-  }
-  */
-  
-  .webring-site-description-container {
-    font-style: italic;
-  }
-  
-  .webring-header-container {
+  #title{
+    color: #bbc3ba;
     text-align: center;
   }
+  
