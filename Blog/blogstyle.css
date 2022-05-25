@@ -124,9 +124,9 @@ i span {
   #logo {
     float: none;
     position: absolute;
-    margin: -45px -60px;
-    height: 150px;
-    width: 200px;
+    margin-top: 0;
+    height: 75px;
+    width: 100px;
   }
 
   #left {
