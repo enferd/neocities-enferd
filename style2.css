@@ -2,7 +2,7 @@
     font-family: 'ProggyClean';
     src: url("Fonts/ProggyClean/ProggyClean.ttf") format("truetype");
     src: url("Fonts/ProggyClean/ProggyClean.otf") format("opentype");
-    src: url("Fonts/ProggyClean/ProggyCleanCE.ttf") format("truetype");
+    /* src: url("Fonts/ProggyClean/ProggyCleanCE.ttf") format("truetype"); */
 }
 
 
@@ -12,6 +12,12 @@ body {
     background: black url("Images/Wallpapers/fin3.webp") no-repeat 50% 5%;
     margin: 0;
     overflow: hidden;
+  }
+  
+  p {
+    font-size: 1em;
+    margin: 0 auto;
+    
   }
   
   a {
@@ -36,6 +42,78 @@ body {
   
   /* Structure */
   
+#total{ 
+  background-color:rgba(68, 60, 69, 0.77);
+  width: 90vw;
+  height: 90vh;
+  margin: 5vh auto;
+  overflow: auto; /* this i used to fix the weird margin issues */
+  outline: groove transparent;
+  border: groove #bbc3ba;
+  border-radius: 15px;
+  box-shadow: 4px 4px 3px 1px;
+}  
+
+#logo {
+  float: left;
+  width: 80vw;
+  height: 60vw;
+  margin: 2vh auto 0 15px;
+}
+
+#left {
+  float: left; 
+  width: 86vw;
+  height: auto;
+  margin: 0 2vw 2vh 2vw;
+  outline: groove transparent 4px;
+  border-radius: 10px;
+  box-sizing: border-box; /* this only exists because the padding would add width to the original div */
+  border: groove #443c45 4px;
+  padding: 1px 1px;
+  background: #443c45 url("Images/Wallpapers/ba.png") center;
+  overflow: auto;
+  text-align: center;
+}
+
+#right {
+  float: both; 
+  width: 86vw;
+  overflow: hidden;
+  box-sizing: border-box; /* this only exists because the padding would add width to the original div */
+  margin: 5px 2vw;
+}
+
+#navigation{
+ height: auto;
+ padding: 0 5px;
+ margin: 0 0 5px 0;
+ outline: groove transparent 4px;
+ box-sizing: border-box;
+ border: groove #443c45 4px;
+ border-radius: 10px;
+ background: #443c45 url("Images/Wallpapers/ba.png") center top;
+}
+
+#content {
+  padding: 10px 10px; 
+  box-sizing: border-box; /* this only exists because the padding would add width to the original div */
+  outline: groove transparent 4px;
+  border: groove #443c45 4px;
+  border-radius: 10px;
+  background: #443c45 url("Images/Wallpapers/ba.png") center top;
+}
+
+  
+.image {
+  display: block; /* the type of display used by default doesn't allow for centering */
+  margin: auto;
+}
+
+.button{
+  margin: auto;
+}
+
 @media(min-width: 800px){
 
   #total{ 
@@ -44,95 +122,82 @@ body {
      height: 90vh;
      margin: 5vh auto;
      overflow: hidden; /* this i used to fix the weird margin issues */
-     outline: groove #bbc3ba;
+     outline: groove transparent;
+     border: groove #bbc3ba;
      border-radius: 15px;
      box-shadow: 4px 4px 3px 1px;
   }  
-  /*
-  #content {
-     width: 95%;
-     margin: 2vh auto;
-     height: 86vh;
-     clear: both;
+
+  #logo {
+    float: left;
+    height: 75px;
+    width: 100px;
+    margin: 2vh auto 0 15px;
   }
-  */
+
   #left {
      float: left; 
-     width: 100px;
-     height: 86vh;
-     margin: 2vh 10px 2vh 15px;
-  }
-  
-  #info {
-     height: calc(86vh - 100px);  
-     background-color:#443c45;
-     outline: groove #443c45 4px;
+     width: 100px;  
+     height: calc(86vh - 75px);  
+     margin: 0 auto 2vh 15px;   
+
+     outline: groove transparent 4px;
+     border: groove #443c45 4px;
      border-radius: 10px;
      box-sizing: border-box; /* this only exists because the padding would add width to the original div */
-     padding: 5px 5px;
+     padding: 1px 1px;
+
      background: #443c45 url("Images/Wallpapers/ba.png") center;
      overflow: auto; 
   }
   
   #right {
      float: right; 
-     width: 650px;
+     width: 660px;
      height: 86vh; 
-     overflow: auto;
+     overflow: hidden;
      box-sizing: border-box; /* this only exists because the padding would add width to the original div */
-     margin: 2vh 15px 2vh 10px;
+     margin: 2vh 15px 2vh auto;
   }
 
   #navigation{
-    height: 30px;
-    padding: 0 10px;
+    height: 40px;
+    padding: 0 5px;
     margin: 0 0 15px 0;
-    background-color:#443c45;
-    outline: groove #443c45 4px;
+    outline: groove transparent 4px;
+    box-sizing: border-box;
+    border: groove #443c45 4px;
     border-radius: 10px;
     background: #443c45 url("Images/Wallpapers/ba.png") center top;
   }
 
   #content {
-     height: calc(86vh - 50px);
+     height: calc(86vh - 56px);
      padding: 10px 10px; 
      box-sizing: border-box; /* this only exists because the padding would add width to the original div */
-     background-color:#443c45;
-     outline: groove #443c45 4px;
+     outline: groove transparent 4px;
+     border: groove #443c45 4px;
      border-radius: 10px;
      background: #443c45 url("Images/Wallpapers/ba.png") center top;
   }
 
-  /*
-  #footer {
-    clear: both;
-    width: 95%;
-    height: 10vh;
-    margin: 0 auto auto auto; 
-  } 
-  */
-}
-  
-
-
-  /* Classes */
-  
   .image {
     display: block; /* the type of display used by default doesn't allow for centering */
     margin: auto;
   }
-  
+
   .button{
-    float: left;
-    margin: 1px 2px;
+    float: both;
+    margin: auto;
   }
+}
+
+
+  /* Classes */
+  
   
   /* IDs */
   
-  #logo {
-    height: 100px;
-    width: 100px;
-  }
   
   #title{
     color: #bbc3ba;
