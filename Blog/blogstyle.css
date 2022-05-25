@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ProggyClean';
-    src: url("Fonts/ProggyClean/ProggyClean.ttf") format("truetype");
-    src: url("Fonts/ProggyClean/ProggyClean.otf") format("opentype");
+    src: url("../Fonts/ProggyClean/ProggyClean.ttf") format("truetype");
+    src: url("../Fonts/ProggyClean/ProggyClean.otf") format("opentype");
     /* src: url("Fonts/ProggyClean/ProggyCleanCE.ttf") format("truetype"); */
 }
 
@@ -9,15 +9,30 @@
 body {
     color: #bbc3ba;
     font-family: ProggyClean;
-    background: black url("Images/Wallpapers/fin3.webp") no-repeat 50% 5%;
+    background: black url("../Images/Wallpapers/fin3.webp") no-repeat 50% 5%;
     margin: 0;
     overflow: hidden;
   }
   
   p {
     font-size: 1em;
-    margin: 0 auto; 
+    margin: 0 auto;
+    
   }
+
+small{
+  text-align: right;
+  float: right;
+}
+
+i {
+  text-align: center;
+  display: block;
+}
+
+i span {
+  margin-left: 101px;
+}
 
   a {
     color: #bbc3ba;
@@ -35,10 +50,6 @@ body {
   marquee {
     font-size: 2em;
     color: #ccd4cb;
-  }
-  
-  h3 {
-    margin: 0 0 -5px 0;
   }
   
   /* Structure */
@@ -62,20 +73,6 @@ body {
   margin: 2vh auto 0 15px;
 }
 
-#left {
-  width: 86vw;
-  height: auto;
-  margin: 0 2vw 2vh 2vw;
-  outline: groove transparent 4px;
-  border-radius: 10px;
-  box-sizing: border-box; /* this only exists because the padding would add width to the original div */
-  border: groove #443c45 4px;
-  padding: 1px 1px;
-  background: #443c45 url("Images/Wallpapers/ba.png") center;
-  overflow: auto;
-  text-align: center;
-}
-
 #right {
   float: both; 
   width: 86vw;
@@ -92,7 +89,7 @@ body {
  box-sizing: border-box;
  border: groove #443c45 4px;
  border-radius: 10px;
- background: #443c45 url("Images/Wallpapers/ba.png") center top;
+ background: #443c45 url("../Images/Wallpapers/ba.png") center top;
 }
 
 #content {
@@ -101,7 +98,13 @@ body {
   outline: groove transparent 4px;
   border: groove #443c45 4px;
   border-radius: 10px;
-  background: #443c45 url("Images/Wallpapers/ba.png") center top;
+  background: #443c45 url("../Images/Wallpapers/ba.png") center top;
+}
+
+#blog_nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 /* classes */
@@ -111,59 +114,6 @@ body {
   margin: auto;
 }
 
-.button{
-  margin: auto;
-}
-
-.button:hover{
-  box-shadow: 0 0 1px 1px #bbc3ba;
-}
-
-  /* webring */
-  
-  .webring-table {
-    table-layout: fixed;
-    width: 98%;
-    background: #443c45 url("Images/Wallpapers/bb.png") center;
-    /* border-collapse: collapse; */
-    border-radius: 10px;
-    border: groove #443c45 3px;
-    overflow: hidden;
-    margin: 1%;
-    box-shadow: 3px 3px 2px 1px #000;
-  }
-  
-  .webring-table-tr, .webring-table-td {
-    /* border-collapse: collapse; */
-    vertical-align: top;
-  }
-  
-  .webring-site-section {
-    /* max-width: 15em; */
-    text-align: left;
-  }
-  
-  /*
-  .webring-site-label {
-  }
-  */
-
-  .webring-site-link-container a {
-    background-color:#443c45;
-  }
-  
-  .webring-site-link-container a:hover {
-    box-shadow: inset 0 0 0 1px #bbc3ba;
-  }
-
-  .webring-site-description-container {
-    font-style: italic;
-  }
-  
-  .webring-header-container {
-    text-align: center;
-  }
-
 @media(min-width: 800px){
 
   #total{ 
@@ -172,8 +122,11 @@ body {
   }  
 
   #logo {
-    height: 75px;
-    width: 100px;
+    float: none;
+    position: absolute;
+    margin: -45px -60px;
+    height: 150px;
+    width: 200px;
   }
 
   #left {
@@ -185,17 +138,19 @@ body {
   
   #right {
      float: right; 
-     width: 660px;
+     width: 780px;
      height: 86vh; 
-     margin: 2vh 15px 2vh auto;
+     margin: 2vh 10px;
   }
 
   #navigation{
     height: 40px;
-    margin: 0 0 15px 0;}
+    width: 660px;
+    margin: 0 0 20px auto;
+  }
 
   #content {
-     height: calc(86vh - 56px);
+     height: calc(86vh - 66px);
      overflow: auto;
   }
 
@@ -204,20 +159,5 @@ body {
   .button{
     float: both;
   }
-
-  /* webring */
-  
-  .webring-table {
-    width: 92%;
-    margin: 4%;
-  }
 }
-
-  /* IDs */
-  
-  
-  #title{
-    color: #bbc3ba;
-    text-align: center;
-  }
   
