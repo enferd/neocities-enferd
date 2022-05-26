@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'ProggyClean';
+    src: url("../Fonts/ProggyClean/ProggyClean.ttf") format("truetype");
+    src: url("../Fonts/ProggyClean/ProggyClean.otf") format("opentype");
+    /* src: url("Fonts/ProggyClean/ProggyCleanCE.ttf") format("truetype"); */
+}
+
+
+body {
+    color: #bbc3ba;
+    font-family: ProggyClean;
+    background: black url("../Images/Wallpapers/fin3.webp") no-repeat 50% 5%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  p {
+    font-size: 1em;
+    margin: 0 auto;
+    
+  }
+
+  spoiler{
+    background-color: black;
+    color: transparent;
+  }
+  
+  spoiler:hover, spoiler:focus{
+    background-color: black;
+    color: white;
+  }
+
+small{
+  text-align: right;
+  float: right;
+}
+
+i {
+  text-align: center;
+  display: block;
+}
+
+i span {
+  margin-left: 101px;
+}
+
+  a {
+    color: #bbc3ba;
+  }
+  
+  a:visited {
+    color: #bbc3ba;
+  }
+  
+  p a:hover {
+    color: #ccd4cb;
+    box-shadow: inset 0 0 0 1px #bbc3ba;
+  }
+  
+  marquee {
+    font-size: 2em;
+    color: #ccd4cb;
+  }
+  
+  /* Structure */
+  
+#total{ 
+  background-color:rgba(68, 60, 69, 0.77);
+  width: 90vw;
+  height: 90vh;
+  margin: 5vh auto;
+  overflow: auto; /* this i used to fix the weird margin issues */
+  outline: groove transparent;
+  border: groove #bbc3ba;
+  border-radius: 15px;
+  box-shadow: 6px 3px 0px 2px;
+}  
+
+#logo {
+  float: left;
+  width: 80vw;
+  height: 60vw;
+  margin: 2vh auto 0 15px;
+}
+
+#right {
+  float: both; 
+  width: 86vw;
+  overflow: hidden;
+  box-sizing: border-box; /* this only exists because the padding would add width to the original div */
+  margin: 5px 2vw;
+}
+
+#navigation{
+ height: auto;
+ padding: 0 5px;
+ margin: 0 0 5px 0;
+ outline: groove transparent 4px;
+ box-sizing: border-box;
+ border: groove #443c45 4px;
+ border-radius: 10px;
+ background: #443c45 url("../Images/Wallpapers/ba.png") center top;
+}
+
+#content {
+  padding: 10px 10px; 
+  box-sizing: border-box; /* this only exists because the padding would add width to the original div */
+  outline: groove transparent 4px;
+  border: groove #443c45 4px;
+  border-radius: 10px;
+  background: #443c45 url("../Images/Wallpapers/ba.png") center top;
+}
+
+#blog_nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+/* classes */
+  
+.image {
+  display: block; /* the type of display used by default doesn't allow for centering */
+  margin: auto;
+}
+
+@media(min-width: 800px){
+
+  #total{ 
+     width: 800px;
+     overflow: hidden; /* this i used to fix the weird margin issues */
+  }  
+
+  #logo {
+    float: none;
+    position: absolute;
+    margin-top: 0;
+    height: 75px;
+    width: 100px;
+  }
+
+  #left {
+     width: 100px;  
+     height: calc(86vh - 75px);  
+     margin: 0 auto 2vh 15px;   
+     text-align: left;
+  }
+  
+  #right {
+     float: right; 
+     width: 780px;
+     height: 86vh; 
+     margin: 2vh 10px;
+  }
+
+  #navigation{
+    height: 40px;
+    width: 660px;
+    margin: 0 0 20px auto;
+  }
+
+  #content {
+     height: calc(86vh - 66px);
+     overflow: auto;
+  }
+
+  /* Classes */
+
+  .button{
+    float: both;
+  }
+}
+  
