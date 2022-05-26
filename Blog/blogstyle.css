@@ -20,6 +20,16 @@ body {
     
   }
 
+  spoiler{
+    background-color: black;
+    color: transparent;
+  }
+  
+  spoiler:hover, spoiler:focus{
+    background-color: black;
+    color: white;
+  }
+
 small{
   text-align: right;
   float: right;
