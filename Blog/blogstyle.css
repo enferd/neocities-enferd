@@ -41,7 +41,7 @@ i {
 }
 
 i span {
-  margin-left: 101px;
+  margin-left: 98px;
 }
 
   a {
@@ -112,9 +112,8 @@ i span {
 }
 
 #blog_nav {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  height: 20px;
+  margin-top: -20px;
 }
 
 /* classes */
@@ -160,8 +159,14 @@ i span {
   }
 
   #content {
-     height: calc(86vh - 66px);
-     overflow: auto;
+    min-height: calc(86vh - 66px);
+    height: calc(86vh - 66px);
+    overflow: auto;
+  }
+
+  #blog_post {
+    min-height: 100%;
+    padding-bottom: 0;
   }
 
   /* Classes */
