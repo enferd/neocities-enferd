@@ -111,10 +111,26 @@ i span {
   background: #443c45 url("../Images/Wallpapers/ba.png") center top;
 }
 
-#blog_nav {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+#gallery {
+  box-sizing: border-box;
+  border: groove #443c45 2px;
+  border-radius: 4px;
+  background: #443c45 url("../Images/Wallpapers/bb.png") center;
+  box-shadow: 2px 2px 1px 1px #000;
+}
+#gallery img{
+  display: block;
+  margin: 2px auto;
+  width: initial;
+  height: 200px;
+}
+#desc {
+  text-align: center;
+  height:30px;
+}
+#desc p {
+  display: table;
+  background-color:#443c45;
 }
 
 /* classes */
@@ -169,15 +185,11 @@ i span {
     width: 360px;
     height: 250px;
     margin: 5px 3px;
-    box-sizing: border-box;
-    border: groove #443c45 2px;
-    border-radius: 4px;
-    background: #443c45 url("../Images/Wallpapers/bb.png") center;
-    box-shadow: 2px 2px 1px 1px #000;
   }
   #gallery img{
-    display: block;
-    margin: 2px auto;
+    width: unset;
+    max-width: 360px;
+    height: 220px;
   }
   #desc {
     text-align: center;
