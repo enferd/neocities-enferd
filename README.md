@@ -8,16 +8,16 @@ My github repo for the Neocities Page enferd, I'll be working on it through here
 
 - [x] Add webring code.
 - [ ] Add blog, coding, art, music, and links pages.
-  + [ ] Blog
-    * [ ] Structure
-    * [ ] Style
-    * [ ] Code
+  + [x] Blog
+    * [x] Structure
+    * [x] Style
+    * [x] Code
   + [ ] Coding
     * [ ] Structure
     * [ ] Style
     * [ ] Code
   + [ ] Art
-    * [ ] Structure
+    * [x] Structure
     * [ ] Style
     * [ ] Code
   + [ ] Music
@@ -37,3 +37,4 @@ My github repo for the Neocities Page enferd, I'll be working on it through here
   + [ ] Logo
   + [ ] Content
   + [x] Responsive Design
+- [ ] Work in making everything more workable
