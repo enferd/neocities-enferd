@@ -1,45 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
-
-	<title>My Markdown Content</title>
-
-	<meta name="viewport" content="width=device-width">
-
-	<link href="style.css" rel="stylesheet" type="text/css" media="all">
-	<script src="loadFile.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-	<!-- Obtain Markdown.Converter.js from http://code.google.com/p/pagedown/ -->
-	<script src="Markdown.Converter.js"></script>
-
-	<script>
-$(document).ready(function () {
-$("#status").html("<p>Loading page content...</p>");
-
-// Load the Markdown file and convert it to HTML for display
-var markdownURL = "Blog/17-5-22_Start.md";
-$.get(markdownURL, function (markdownContent) {
-var converter = new Markdown.Converter();
-var htmlContent = converter.makeHtml(markdownContent);
-$("div#content").html(htmlContent);
-});
-});
-	</script>
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ð</title>
+	<link href="style2.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+        #test {
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-
-	<div id="content">
-		<div File="Blog/17-5-22_Start.md"></div>
-		<div id="status">
-			<p>JavaScript must be enabled in your browser to view this page.</p>
+	<div id="total">
+		<div id="right">
+			<div id="navigation">
+				<center>
+					<p>
+						<a href="blog.html"> → ßłøg</a> &emsp;
+						<a href="not_found.html"> → ¢øðiŋg </a> &emsp;
+						<a href="art.html"> → αrт </a> &emsp;
+						<a href="music.html"> → mµ∫iℂ </a> &emsp;
+						<a href="not_found.html"> → Ⅼiŋĸ$ </a>
+					</p>
+				</center>
+			</div>
+			<div id="content">
+                <canvas id="test"></canvas>
+			</div>
 		</div>
-		# Test
+        <a href="index.html"><img class="image" id="logo" src="Images/logo2.png" alt="Logo"></a>
+		<div id="left">
+			<bold> cute buttons </bold> <br> <br>
+			<a href="https://neocities.org"><img class="button" src="Images/buttons/neocities.gif" alt="Neocities"></a>
+			<a href="https://www.pcmag.com/encyclopedia/term/800x600"><img class="button" src="Images/buttons/hicolor.gif"></a>
+			<a href="https://validator.w3.org/"><img class="button" src="Images/buttons/valid401.gif"></a>
+			<a href="https://developer.mozilla.org/en-US/docs/Learn"><img class="button" src="Images/buttons/htmllearnittoday.gif"></a>
+			<a href="https://creativecommons.org/licenses/by-sa/2.0/"><img class="button" src="Images/buttons/cc-by-sa.gif"></a>
+			<a href="https://www.hrc.org/resources/bisexual-faq"><img class="button" src="Images/buttons/bi8831.png"></a>
+			<a href="https://theanarchistlibrary.org/library/anonymous-desert"><img class="button" src="Images/buttons/anarchynow.gif"></a>
+			<a href="mailto:en@ð.gay"><img class="button" src="Images/buttons/email.gif"></a>
+			<a href="https://youcandoanythingwithexcel.com/"><img class="button" src="Images/buttons/getexcelviewer.gif"></a>
+			<a href="https://kyou.systems/"><img class="button" src="Images/buttons/kyou.gif"></a>
+            <button onclick="expandUI()">test</button>
+            <script src="test.js"></script>
+		</div>
 	</div>
-	<script>includeHTML();</script>
 </body>
-
 </html>

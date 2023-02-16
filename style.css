@@ -11,25 +11,13 @@ body {
   overflow: hidden;
 }
 
-a {
-  color: #bbc3ba;
-}
+a { color: #bbc3ba; }
+a:visited { color: #bbc3ba; }
+a:hover { color: #ccd4cb; }
 
-a:visited {
-  color: #bbc3ba;
-}
+marquee { color: cyan; }
 
-a:hover {
-  color: #ccd4cb;
-}
-
-marquee {
-  color: cyan;
-}
-
-h3 {
-  margin: 0 0 -5px 0;
-}
+h3 { margin: 0 0 -5px 0; }
 
 /* Structure */
 

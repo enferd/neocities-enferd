@@ -5,43 +5,37 @@
     /* src: url("Fonts/ProggyClean/ProggyCleanCE.ttf") format("truetype"); */
 }
 
-
 body {
     color: #bbc3ba;
     font-family: ProggyClean;
     background: black url("Images/Wallpapers/fin3.webp") no-repeat 50% 5%;
     margin: 0;
     overflow: hidden;
-  }
+}
+
+div { transition: all .3s ease-out; }
   
-  p {
+p {
     font-size: 1em;
     margin: 0 auto; 
-  }
+}
 
-  a {
-    color: #bbc3ba;
-  }
-  
-  a:visited {
-    color: #bbc3ba;
-  }
-  
-  p a:hover {
-    color: #ccd4cb;
-    box-shadow: inset 0 0 0 1px #bbc3ba;
-  }
-  
-  marquee {
-    font-size: 2em;
-    color: #ccd4cb;
-  }
-  
-  h3 {
-    margin: 0 0 -5px 0;
-  }
-  
-  /* Structure */
+a { color: #bbc3ba; }
+a:visited { color: #bbc3ba; }
+
+p a:hover {
+  color: #ccd4cb;
+  box-shadow: inset 0 0 0 1px #bbc3ba;
+}
+
+marquee {
+  font-size: 2em;
+  color: #ccd4cb;
+}
+
+h3 { margin: 0 0 -5px 0; }
+
+/* Structure */
   
 #total{ 
   background-color:rgba(68, 60, 69, 0.77);
@@ -111,58 +105,31 @@ body {
   margin: auto;
 }
 
-.button{
-  margin: auto;
+.button{ margin: auto; }
+.button:hover{ box-shadow: 0 0 1px 1px #bbc3ba; }
+
+/* webring */
+
+.webring-table {
+  table-layout: fixed;
+  width: 98%;
+  background: #443c45 url("Images/Wallpapers/bb.png") center;
+  /* border-collapse: collapse; */
+  border-radius: 10px;
+  border: groove #443c45 3px;
+  overflow: hidden;
+  margin: 1%;
+  box-shadow: 3px 3px 2px 1px #000;
 }
+.webring-table-tr, .webring-table-td { /* border-collapse: collapse; */ vertical-align: top; }
+.webring-site-section { /* max-width: 15em; */ text-align: left; }
+/* .webring-site-label {} */
+.webring-site-link-container a { background-color:#443c45; }
+.webring-site-link-container a:hover { box-shadow: inset 0 0 0 1px #bbc3ba; }
+.webring-site-description-container { font-style: italic; }
+.webring-header-container { text-align: center; }
 
-.button:hover{
-  box-shadow: 0 0 1px 1px #bbc3ba;
-}
-
-  /* webring */
-  
-  .webring-table {
-    table-layout: fixed;
-    width: 98%;
-    background: #443c45 url("Images/Wallpapers/bb.png") center;
-    /* border-collapse: collapse; */
-    border-radius: 10px;
-    border: groove #443c45 3px;
-    overflow: hidden;
-    margin: 1%;
-    box-shadow: 3px 3px 2px 1px #000;
-  }
-  
-  .webring-table-tr, .webring-table-td {
-    /* border-collapse: collapse; */
-    vertical-align: top;
-  }
-  
-  .webring-site-section {
-    /* max-width: 15em; */
-    text-align: left;
-  }
-  
-  /*
-  .webring-site-label {
-  }
-  */
-
-  .webring-site-link-container a {
-    background-color:#443c45;
-  }
-  
-  .webring-site-link-container a:hover {
-    box-shadow: inset 0 0 0 1px #bbc3ba;
-  }
-
-  .webring-site-description-container {
-    font-style: italic;
-  }
-  
-  .webring-header-container {
-    text-align: center;
-  }
+/* if screen width > 800 px */
 
 @media(min-width: 800px){
 

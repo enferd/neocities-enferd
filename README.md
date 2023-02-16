@@ -16,14 +16,14 @@ My github repo for the Neocities Page enferd, I'll be working on it through here
     * [ ] Structure
     * [ ] Style
     * [ ] Code
-  + [ ] Art
+  + [x] Art
     * [x] Structure
-    * [ ] Style
-    * [ ] Code
-  + [ ] Music
-    * [ ] Structure
-    * [ ] Style
-    * [ ] Code 
+    * [x] Style
+    * [x] Code
+  + [x] Music
+    * [x] Structure
+    * [x] Style
+    * [x] Code 
   + [ ] Links
     * [ ] Structure
     * [ ] Style
